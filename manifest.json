@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Link Collector",
+  "description": "Collects all links in a webpage and stores them in a file.",
+  "version": "1.0",
+  "permissions": ["scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }]
+}
